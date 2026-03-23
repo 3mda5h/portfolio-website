@@ -10,7 +10,7 @@ func main() {
 	http.Handle("/assets/", http.StripPrefix("/assets/", assetsFileServer))
 	
 	http.Handle("/", http.FileServer(http.Dir("./pages")))
-	log.Println("Server running at http://localhost:2000")
-    http.ListenAndServe(":2000", nil)	
+	log.Println("Server running at http://localhost:6767")
+    http.ListenAndServe(":6767", nil)	
 }
 
